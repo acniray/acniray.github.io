@@ -1,19 +1,29 @@
-- name: Software Engineer Keywords
+- name: Skill
   keywords:
+      - C/C++
+      - C#
+      - Dart
+      - Flutter
+      - Golang
       - Java
-      - C++
+      - JavaScript
+      - Pascal
       - Python
-      - Design Patterns
+      - SQL
 
-- name: Mobile Developer Keywords
+- name: Platform
   keywords:
+      - Windows
+      - Linux
       - Android
-      - Reverse Engineering
+      - IOS
+      - OpenWRT
 
-- name: Windows Developer Keywords
+- name: Database
   keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - Oracle
+      - Mysql
+      - SqlServer
+      - Postgresql
+      - ClickHouse
+      - Redis
