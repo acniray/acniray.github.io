@@ -1,3 +1,12 @@
+---
+layout: post
+title: linux 上实现 vxlan 网络并固化
+categories: Linux
+description: 这几天在做Vxlan的部署，做个记录。
+keywords: Linux, Vxlan
+
+---
+
 linux 上实现 vxlan 网络（转）--增加固化部分
 ==================
 
