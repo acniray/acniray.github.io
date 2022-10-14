@@ -5,15 +5,15 @@ categories: Java
 description: 最近在读Undertow的源码，对于ServletPrintWriterDelegate类的实现比较感兴趣，做个记录。
 keywords: Java, Undertow, Unsafe
 ---
-
+关于sum.misc.Unsafe的一点记录
+==================
 ## 需求
 
-源码github坐标：ServletPrintWriterDelegate.java
+源码github坐标：[undertow/ServletPrintWriterDelegate.java at master · undertow-io/undertow · GitHub](https://github.com/undertow-io/undertow/blob/master/servlet/src/main/java/io/undertow/servlet/spec/ServletPrintWriterDelegate.java)
 
 该类继承的是PrintWriter，但是由于并不实用PrintWriter中的OutputStream，所以实用Unsafe.allocateInstance构造了一个newInstance，完美的绕过了父类的构造方法，并可用于所有适用接口。
 
 做个记录，备忘。
-
 
 ## 生成实例：
 
