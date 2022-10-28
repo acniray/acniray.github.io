@@ -4,6 +4,7 @@ title: linux 上实现 vxlan 网络并固化
 categories: Linux
 description: 这几天在做Vxlan的部署，做个记录。
 keywords: Linux, Vxlan
+
 ---
 
 linux 上实现 vxlan 网络（转）--增加固化部分
@@ -462,3 +463,8 @@ Linux 提供了另外一种方法，内核能够动态地通知节点要和哪�
 设置开机自动启动
 
     $  nmcli con mod vxlan0 connection.autoconnect yes
+
+全部设置之后，如果无法ping通对端IP，请注意防火墙的配置
+
+    # firewall-cmd --permanent --add-port=4789/udp
+    # firewall-cmd --reload
