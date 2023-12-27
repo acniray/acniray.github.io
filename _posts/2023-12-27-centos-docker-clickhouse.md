@@ -7,16 +7,16 @@ keywords: Linux, Docker,Zookeeper,Clickhouse
 
 ---
 
-# Centos多机Docker部署Clickhouse踩坑记
+Centos多机Docker部署Clickhouse踩坑记
 ==================
 
 ## 前言
 有了之前单机部署的经验，本来以为就是洒洒水的东西，没想到踩了一堆的坑，要记录一下！！
 
 ## 主要问题
-1、容器间要互通，如果采用端口映射的模式，cluster是跑不起来的！！
-2、zookeeper别用太高的版本，也别太低。。目前最好是官方推荐的3.5.10！！
-3、default用户别设置密码，有密码cluster也跑不起来！！
+* `1、容器间要互通，如果采用端口映射的模式，cluster是跑不起来的！！`
+* `2、zookeeper别用太高的版本，也别太低。。目前最好是官方推荐的3.5.10！！`
+* `3、default用户别设置密码，有密码cluster也跑不起来！！`
 
 ## 不同机器上的Docker互通的问题
 看了一堆的方案，感觉改动最小也最快的方式，应该是设路由表，加几条转发的方案。
