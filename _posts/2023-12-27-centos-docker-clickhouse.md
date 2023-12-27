@@ -1,4 +1,14 @@
+---
+layout: post
+title: Centos多机Docker部署Clickhouse踩坑记
+categories: Linux, Docker, DB
+description: 避坑指南
+keywords: Linux, Docker,Zookeeper,Clickhouse
+
+---
+
 # Centos多机Docker部署Clickhouse踩坑记
+==================
 
 ## 前言
 有了之前单机部署的经验，本来以为就是洒洒水的东西，没想到踩了一堆的坑，要记录一下！！
